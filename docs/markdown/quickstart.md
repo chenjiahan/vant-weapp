@@ -6,14 +6,17 @@
 
 ## 安装
 
-### 步骤一 通过 npm 安装
+### 步骤一 通过 npm 安装 (推荐)
 
 ```bash
-# 通过 npm 安装
+# 通过 npm 安装 (0.5.x 稳定版)
 npm i vant-weapp -S --production
 
-# 通过 yarn 安装
+# 通过 yarn 安装 (0.5.x 稳定版)
 yarn add vant-weapp --production
+
+# 安装 1.0 beta 版
+npm i vant-weapp@beta -S --production
 ```
 
 ### 步骤二 构建 npm 包

@@ -39,11 +39,14 @@ Vant Weapp 是移动端 Vue 组件库 [Vant](https://github.com/youzan/vant) 的
 小程序已经支持使用 npm 安装第三方包，详见 [npm 支持](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html?search-key=npm)
 
 ```bash
-# npm
+# 通过 npm 安装 (0.5.x 稳定版)
 npm i vant-weapp -S --production
 
-# yarn
+# 通过 yarn 安装 (0.5.x 稳定版)
 yarn add vant-weapp --production
+
+# 安装 1.0 beta 版
+npm i vant-weapp@beta -S --production
 ```
 
 ### 方式二. 下载代码
