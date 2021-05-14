@@ -128,6 +128,8 @@ Page({
 });
 ```
 
+> Tips: 默认情况下，日期区间的起止时间不能为同一天，可以通过设置 allow-same-day 属性来允许选择同一天。
+
 ### 快捷选择
 
 将`show-confirm`设置为`false`可以隐藏确认按钮，这种情况下选择完成后会立即触发`confirm`事件。
@@ -293,7 +295,7 @@ Page({
 | --- | --- | --- | --- |
 | max-range | 日期区间最多可选天数，默认无限制 | _number \| string_ | - |
 | range-prompt | 范围选择超过最多可选天数时的提示文案 | _string_ | `选择天数不能超过 xx 天` |
-| allow-same-day | 是否允许日期范围的起止时间为同一天 | _boolean_ | `fasle` |
+| allow-same-day | 是否允许日期范围的起止时间为同一天 | _boolean_ | `false` |
 
 ### Day 数据结构
 
