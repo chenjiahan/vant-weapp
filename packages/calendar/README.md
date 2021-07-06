@@ -234,6 +234,14 @@ Page({
 <van-calendar type="range" max-range="{{ 3 }}" />
 ```
 
+### 自定义周起始日
+
+通过 `first-day-of-week` 属性设置一周从哪天开始。
+
+```html
+<van-calendar first-day-of-week="{{ 1 }}" />
+```
+
 ### 平铺展示
 
 将`poppable`设置为`false`，日历会直接展示在页面内，而不是以弹层的形式出现。
@@ -274,6 +282,7 @@ Page({
 | show-confirm | 是否展示确认按钮 | _boolean_ | `true` |
 | confirm-text | 确认按钮的文字 | _string_ | `确定` |
 | confirm-disabled-text | 确认按钮处于禁用状态时的文字 | _string_ | `确定` |
+| first-day-of-week | 设置周起始日 | _0~6_ | `0` |
 
 ### Poppable Props
 
@@ -294,7 +303,8 @@ Page({
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | max-range | 日期区间最多可选天数，默认无限制 | _number \| string_ | - |
-| range-prompt | 范围选择超过最多可选天数时的提示文案 | _string_ | `选择天数不能超过 xx 天` |
+| range-prompt | 范围选择超过最多可选天数时的提示文案 | _string \| null_ | `选择天数不能超过 xx 天` |
+| show-range-prompt | 范围选择超过最多可选天数时，是否展示提示文案 | _boolean_ | `true` |
 | allow-same-day | 是否允许日期范围的起止时间为同一天 | _boolean_ | `false` |
 
 ### Day 数据结构
@@ -320,6 +330,7 @@ Page({
 | close | 关闭弹出层时触发 | - |
 | opened | 打开弹出层且动画结束后触发 | - |
 | closed | 关闭弹出层且动画结束后触发 | - |
+| over-range | 范围选择超过最多可选天数时触发 | - |
 
 ### Slots
 
